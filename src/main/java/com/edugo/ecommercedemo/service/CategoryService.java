@@ -9,7 +9,6 @@ import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -42,5 +41,9 @@ public class CategoryService {
     public void updateCategories(List<CategoryDTO> categoryDTOs) {
         List<Category> categories = categoryMapper.toCategory(categoryDTOs);
         categoryRepository.saveAll(categories);
+    }
+
+    public boolean exist(Long id) {
+        return categoryRepository.existsById(id);
     }
 }
