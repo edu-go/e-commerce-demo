@@ -1,16 +1,13 @@
 # Getting Started
 
-### Reference Documentation
+### E-Commerce Demo Reference Documentation
 
-For further reference, please consider the following sections:
+### Before running, verify that you installed:
+* Docker
 
-* [Official Gradle documentation](https://docs.gradle.org)
-* [Spring Boot Gradle Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/3.3.1/gradle-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/3.3.1/gradle-plugin/reference/html/#build-image)
+### Build the Docker Image:
+`docker build -t my-spring-boot-app .`
 
-### Additional Links
+### Running Docker container ###
 
-These additional references should also help you:
-
-* [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
-
+`docker run -p 8080:8080 e-commerce-demo`
