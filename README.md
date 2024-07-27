@@ -11,3 +11,7 @@
 ### Running Docker container ###
 
 `docker run -p 8080:8080 e-commerce-demo`
+
+### Swagger UI (OpenAPI) ###
+Run on the browser:
+`http://localhost:8080/swagger-ui/index.html`
